@@ -1,0 +1,19 @@
+import random
+
+print("Hello, I have a numeber in mind between 1 to 20")
+Answer = random.randint(1,20)
+
+for GuessesTaken in range(1,5):
+  print("take a guess")
+  Guesses = int(input()) 
+  if Guesses > Answer:
+    print("Your guess is too high")
+  elif Guesses < Answer:
+    print("Your guess is too low")
+  else:
+    break
+
+if Guesses == Answer:
+  print("You are right")
+else:
+  print("The correct answer was"+ str(Answer))
